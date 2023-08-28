@@ -14,7 +14,7 @@ Os módulos no Terraform são blocos reutilizáveis de configuração que encaps
 
 
 
-```http
+```
   mymodule/
 │
 ├── main.tf
@@ -38,7 +38,7 @@ Os módulos no Terraform são blocos reutilizáveis de configuração que encaps
 
 - Crie um arquivo main.tf: Neste arquivo, você configura os recursos principais usando o módulo. Importe o módulo usando a seguinte sintaxe:
 
-```http
+```
 module "nome_qualquer" {
   source = "./caminho_para_o_modulo"
   
@@ -51,7 +51,7 @@ module "nome_qualquer" {
 
 - Acesse as saídas do módulo: Você pode acessar as saídas definidas no módulo da seguinte forma:
 
-```http
+```
 output "nome_saida" {
   value = module.nome_qualquer.nome_saida
 }
